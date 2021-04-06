@@ -169,6 +169,45 @@ body {
   font-weight: bold;
   color: #222222;
   text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.cart_item_info {
+  margin-left: 15px;
+  min-width: 135px
+}
+
+.cart_stars {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.cart_price {
+  font-size: 12px;
+  color: #f16d7f;
+}
+
+.cart_cancel {
+  padding: 36px 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.cart_item_line {
+  margin: 16px;
+  border: 1px solid #ededed;
+}
+
+.cart_total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total_price_text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .account_button:hover {
@@ -210,10 +249,6 @@ body {
 
 .nav_list li {
   position: relative;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .menu_link {
