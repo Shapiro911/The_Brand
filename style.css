@@ -770,6 +770,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  clear: both;
 }
 
 .comment {
@@ -1185,6 +1186,15 @@ body {
   vertical-align: -25%;
 }
 
+.button_add_to_cart:hover {
+  background-color: #ef5b70;
+  color: #ffffff;
+}
+
+.button_add_to_cart:hover::before{
+  filter: brightness(0) invert(1);
+}
+
 .like_also {
   margin-top: 119px;
 }
@@ -1206,3 +1216,138 @@ body {
   justify-content: center;
 }
 
+.checkout {
+  margin-top: 89px;
+  margin-bottom: 93px;
+}
+
+.checkout_dropdown {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.checkout_dropdown summary{
+  list-style: none;
+  cursor: pointer;
+}
+
+.checkout_title {
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.checkout_text {
+  font-size: 13px;
+  color: #b3b2b2;
+  margin-bottom: 15px;
+}
+
+.checkout_check {
+  padding: 39px 0 79px 0;
+  float: left;
+}
+
+.checkbox {
+  margin-bottom: 12px;
+}
+
+.checkbox_last {
+  margin-bottom: 32px;
+}
+
+.checkmark {
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
+.checkmark_text {
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+input[type='radio'] { 
+  transform: scale(1.1); 
+}
+
+.register_pros {
+  margin-top: 33px;
+  margin-bottom: 39px;
+}
+
+.pros {
+  margin-bottom: 12px;
+}
+
+.pros i {
+  height: 8px;
+  width: 8px;
+  color: #b3b2b2;
+  margin-right: 4px;
+  vertical-align: -8%;
+}
+
+.checkout_button {
+  font-family: 'Lato', sans-serif;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  padding: 19px 53px;
+}
+
+.checkout_register {
+  padding: 39px 0 79px 0;
+  float: right;
+}
+
+.checkout_form_title {
+  font-size: 12px;
+  color: #222222;
+}
+
+.checkout_form_title:first-of-type {
+  margin-top: 27px;
+}
+
+.required_star {
+  font-size: 17px;
+  color: #ff0d0d;
+}
+
+.checkout_register_input {
+  width: 390px;
+  height: 45px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 23px;
+  padding-left: 16px;
+}
+
+.checkout_register_required {
+  font-size: 13px;
+  color: #ff0d0d;
+  margin-bottom: 32px;
+}
+
+.forgot_password {
+  font-size: 14px;
+  color: #222222;
+  text-decoration: none;
+  margin-left: 32px;
+  vertical-align: -5px;
+}
+
+.checkout_line {
+  width: 100%;
+  border-bottom: 1px #e8e8e8;
+  margin-top: 31px;
+  margin-bottom: 33px;
+  clear: both;
+}
