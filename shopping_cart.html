@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b7ba52cadb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Single Page</title>
+    <title>Shopping Cart</title>
 </head>
 
 <body>
@@ -90,6 +90,7 @@
             </div>
             <div class="header_top_right">
                 <img class="cart" src="img/cart.svg" alt="cart">
+                <div class="transparent_block"></div>
                 <div class="live_cart">
                     <div class="cart_item">
                         <img src="img/cart_img_1.png" alt="cart_img_1">
@@ -856,128 +857,127 @@
             </div>
         </div>
     </div>
-    <div class="slider">
-        <div class="slider_block"><i class="fas fa-chevron-left"></i></div>
-        <div class="slider_block"><i class="fas fa-chevron-right"></i></div>
-    </div>
-    <div class="product_description">
-        <div class="product_description_box container">
-            <h4 class="product_description_collection">women collection</h4>
-            <div class="product_descripion_line">
-                <hr class="line_pink">
+    <div class="shopping_cart_products container">
+        <div class="product_details">
+            <div class="product_details_left">
+                <h3 class="checkout_title">Product Details</h3>
             </div>
-            <h3 class="product_description_title">Moschino Cheap And Chic</h3>
-            <p class="text product_description_text">Compellingly actualize fully researched processes before proactive
-                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                Completely visualize parallel core competencies rather than exceptional portals. </p>
-            <div class="product_description_info">
-                <div class="product_description_info_left">
-                    <span class="product_description_info_text">MATERIAL: </span>
-                    <span class="product_description_info_text product_description_info_text_black">cotton</span>
-                </div>
-                <div>
-                    <span class="product_description_info_text">DESIGNER: </span>
-                    <span class="product_description_info_text product_description_info_text_black">BINBURHAN</span>
-                </div>
-            </div>
-            <h3 class="product_description_cost">$561</h3>
-            <hr class="line_grey">
-            <div class="product_description_characteristics">
-                <div class="product_description_characteristic">
-                    <p class="product_description_info_text product_description_info_text_black">CHOOSE COLOR</p>
-                    <select class="product_choose">
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Yellow</option>
-                        <option>Green</option>
-                        <option>Black</option>
-                        <option>White</option>
-                    </select>
-                </div>
-                <div class="product_description_characteristic">
-                    <p class="product_description_info_text product_description_info_text_black">CHOOSE size</p>
-                    <select class="product_choose">
-                        <option>XXL</option>
-                        <option>XL</option>
-                        <option>L</option>
-                        <option>M</option>
-                        <option>S</option>
-                        <option>XS</option>
-                        <option>XXS</option>
-                    </select>
-                </div>
-                <div class="product_description_characteristic">
-                    <p class="product_description_info_text product_description_info_text_black">quantity</p>
-                    <input type="number" class="product_quantity" placeholder="1">
-                </div>
-            </div>
-            <button class="button_add_to_cart">Add to Cart</button>
-        </div>
-    </div>
-    <div class="like_also">
-        <div class="container">
-            <h3 class="like_also_title">you may like also</h3>
-            <div class="product_list">
-                <div class="product_box">
-                    <a class="link" href="index.html">
-                        <div class="like_also_img_box">
-                            <img src="img/like_also_1.png" alt="like_also_1">
-                        </div>
-                        <p class="text_box">blaze leggins</p>
-                        <p class="text_box text_box_pink">
-                            $52.00</p>
-                    </a>
-                    <div class="box_add">
-                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                            Add to Cart</a>
-                    </div>
-                </div>
-                <div class="product_box">
-                    <a class="link" href="index.html">
-                        <div class="like_also_img_box">
-                            <img src="img/like_also_2.png" alt="like_also_2">
-                        </div>
-                        <p class="text_box">ALEXA SWEATER</p>
-                        <p class="text_box text_box_pink">
-                            $52.00</p>
-                    </a>
-                    <div class="box_add">
-                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                            Add to Cart</a>
-                    </div>
-                </div>
-                <div class="product_box">
-                    <a class="link" href="index.html">
-                        <div class="like_also_img_box">
-                            <img src="img/like_also_3.png" alt="like_also_3">
-                        </div>
-                        <p class="text_box">AGNES TOP</p>
-                        <p class="text_box text_box_pink">
-                            $52.00</p>
-                    </a>
-                    <div class="box_add">
-                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                            Add to Cart</a>
-                    </div>
-                </div>
-                <div class="product_box">
-                    <a class="link" href="index.html">
-                        <div class="like_also_img_box">
-                            <img src="img/like_also_4.png" alt="like_also_4">
-                        </div>
-                        <p class="text_box">SYLVA SWEATER</p>
-                        <p class="text_box text_box_pink">
-                            $52.00</p>
-                    </a>
-                    <div class="box_add">
-                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                            Add to Cart</a>
-                    </div>
-                </div>
+            <div class="product_details_right">
+                <h3 class="checkout_title">Unit price</h3>
+                <h3 class="checkout_title">Quantity</h3>
+                <h3 class="checkout_title">Shipping</h3>
+                <h3 class="checkout_title">Subtotal</h3>
+                <h3 class="checkout_title">Action</h3>
             </div>
         </div>
+        <hr class="shopping_cart_line">
+        <div class="shopping_cart_product_list">
+            <div class="shopping_cart_product">
+                <div class="shopping_cart_product_left">
+                    <img src="img/shopping_cart_img_1.png" alt="shopping_cart_img_1">
+                    <div class="shopping_cart_product_info">
+                        <h3 class="checkout_title">Mango People T-shirt</h3>
+                        <span class="shopping_cart_product_text">Color:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">Red</span>
+                        <br>
+                        <span class="shopping_cart_product_text">Size:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">XL</span>
+                    </div>
+                </div>
+                <div class="shopping_cart_product_details">
+                    <p class="shopping_cart_product_details_text">$150</p>
+                    <input class="shopping_cart_product_quantity" type="number" placeholder="2">
+                    <p class="shopping_cart_product_details_text">free</p>
+                    <p class="shopping_cart_product_details_text">$300</p>
+                    <div class="cancel">
+                        <img class="cart_cancel" src="img/cart_cancel.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+            <hr class="shopping_cart_line">
+            <div class="shopping_cart_product">
+                <div class="shopping_cart_product_left">
+                    <img src="img/shopping_cart_img_2.png" alt="shopping_cart_img_2">
+                    <div class="shopping_cart_product_info">
+                        <h3 class="checkout_title">Mango People T-shirt</h3>
+                        <span class="shopping_cart_product_text">Color:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">Red</span>
+                        <br>
+                        <span class="shopping_cart_product_text">Size:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">XL</span>
+                    </div>
+                </div>
+                <div class="shopping_cart_product_details">
+                    <p class="shopping_cart_product_details_text">$150</p>
+                    <input class="shopping_cart_product_quantity" type="number" placeholder="2">
+                    <p class="shopping_cart_product_details_text">free</p>
+                    <p class="shopping_cart_product_details_text">$300</p>
+                    <div class="cancel">
+                        <img class="cart_cancel" src="img/cart_cancel.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+            <hr class="shopping_cart_line">
+            <div class="shopping_cart_product">
+                <div class="shopping_cart_product_left">
+                    <img src="img/shopping_cart_img_3.png" alt="shopping_cart_img_3">
+                    <div class="shopping_cart_product_info">
+                        <h3 class="checkout_title">Mango People T-shirt</h3>
+                        <span class="shopping_cart_product_text">Color:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">Red</span>
+                        <br>
+                        <span class="shopping_cart_product_text">Size:</span>
+                        <span class="shopping_cart_product_text shopping_cart_product_text_grey">XL</span>
+                    </div>
+                </div>
+                <div class="shopping_cart_product_details">
+                    <p class="shopping_cart_product_details_text">$150</p>
+                    <input class="shopping_cart_product_quantity" type="number" placeholder="2">
+                    <p class="shopping_cart_product_details_text">free</p>
+                    <p class="shopping_cart_product_details_text">$300</p>
+                    <div class="cancel">
+                        <img class="cart_cancel" src="img/cart_cancel.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+            <hr class="shopping_cart_line">
+            <button class="shopping_cart_button" type="reset">cLEAR SHOPPING CART</button>
+        </div>
     </div>
-    <div class="subscribe">
+    <div class="shopping_cart_checkout container">
+        <div class="shipping_adress">
+            <h3 class="total_price_text">Shipping Adress</h3>
+            <select class="select_country">
+                <option>Bangladesh</option>
+                <option>Ukraine</option>
+                <option>Russia</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+            </select>
+            <input type="text" class="shipping_input" placeholder="State">
+            <input type="text" class="shipping_input" placeholder="Postcode / Zip">
+            <button type="submit" class="shopping_cart_button shopping_cart_checkout_button">get a quote</button>
+        </div>
+        <div class="coupon_discount">
+            <h3 class="total_price_text">coupon discount</h3>
+            <p class="text shopping_cart_text">Enter your coupon code if you have one</p>
+            <input type="text" class="shipping_input" placeholder="State">
+            <button type="submit" class="shopping_cart_button shopping_cart_checkout_button">Apply coupon</button>
+        </div>
+        <div class="proceed_to_checkout">
+            <div>
+                <span class="sub_total_price">Sub total</span>
+                <span class="sub_total_price">$900</span>
+            </div>
+            <div class="grand_total">
+                <span class="total_price_text">GRAND TOTAl</span>
+                <span class="figcap_text_pink" style="margin-left: 12px;">$900</span>
+            </div>
+            <hr class="proceed_to_checkout_line">
+            <a href="checkout.html" class="proceed_to_checkout_button">proceed to checkout</a>
+        </div>
+    </div>
+    <div class=" subscribe">
         <img src="img/subscribe_back.png" alt="subs_back" style="opacity:0.25">
         <div class="subscribe_flex container">
             <div class="subscribe_left">
@@ -1020,15 +1020,18 @@
                             <span class="d">D</span>
                         </div>
                     </a>
-                    <p class="text footer_text">Objectively transition extensive data rather than cross functional
+                    <p class="text footer_text">Objectively transition extensive data rather than cross
+                        functional
                         solutions.
                         Monotonectally
-                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate
+                        an
                         expanded
                         array of
                         processes and cross-unit partnerships.
                     </p>
-                    <p class="text footer_text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    <p class="text footer_text">Efficiently plagiarize 24/365 action items and focused
+                        infomediaries.
                         Distinctively seize
                         superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
