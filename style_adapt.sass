@@ -1,0 +1,618 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+@mixin pink
+    color: #f16d7f
+
+.wrapper
+    display: grid
+    grid-template-rows: 1fr auto
+
+.container
+    max-width: 1140px
+    min-width: 100px
+    margin: 0 auto
+    padding: 0 45px
+
+.icon
+    width: 44px
+    height: 38px
+
+.header
+    padding: 18px 0
+    display: flex
+    justify-content: space-between
+    .flex_left i
+        font-size: 26px
+        color: #E8E8E8
+    .flex_right i
+        font-size: 26px
+        color: #E8E8E8
+        margin-right: 32px
+
+.header_back
+    background-color: black
+
+.flex_left
+    display: flex
+    align-items: center
+
+.flex_right
+    display: flex
+    align-items: center
+    max-width: 100%
+
+.categories
+    display: grid
+    grid-template-columns: repeat(3, minmax(180px, 360px))
+    grid-template-rows: minmax(130px, 260px), minmax(90px, 180px)
+    grid-gap: 30px
+    margin-bottom: 96px
+
+.icon
+    margin-right: 41px
+
+.cart
+    filter: brightness(0) invert(1)
+
+.cart_box
+    position: relative
+
+.cart_box::after
+    content: "5"
+    text-align: center
+    color: #ffffff
+    position: absolute
+    top: -8px
+    right: -9px
+    display: inline-block
+    width: 19px
+    height: 19px
+    border-radius: 15px
+    background-color: #f16d7f
+
+.banner
+    background-color: #F1E4E6
+    position: relative
+    margin-bottom: 64px
+
+.banner_block
+    margin: 0 auto
+    display: grid
+    max-width: 1600px
+    grid-template-rows: 1
+    grid-template-columns: repeat(2, 50%)
+    column-gap: 64px
+    align-items: center
+
+.span_fashion
+    color: #f16d7f
+
+.banner_text
+    border-left: 12px solid #f16d7f
+    padding-left: 12px
+    padding-right: 45px
+    max-width: 100%
+
+.banner_text p
+    max-width: 100%
+
+.banner_brand
+    color: #222222
+    font-size: 60px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 60px
+    margin-bottom: 20px
+
+.text_fashion
+    margin: unset
+    font-size: 40px
+    line-height: 31px
+
+.banner_back_img
+    max-width: 100%
+    display: block
+
+.categories_img
+    max-width: 100%
+    display: block
+    background: rgba(33, 22, 22, 0.7)
+
+.categories_item:last-child
+    grid-column: 1/4
+
+.categories_item
+    position: relative
+
+.categories_text
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 0
+    max-width: 360px
+    min-width: 100%
+    max-height: 280px
+    min-height: 100%
+    background: rgba(33, 22, 22, 0.7)
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    text-transform: uppercase
+
+.categories_text p
+    font-size: 16px
+    font-weight: 400
+    color: #FFFFFF
+
+.categories_text h3
+    font-size: 24px
+    font-weight: 700
+    @include pink
+
+.title
+    font-size: 30px
+    font-weight: 400
+    letter-spacing: 0.75px
+    text-align: center
+    color: #222222
+    margin-bottom: 6px
+
+.text_product
+    font-size: 14px
+    text-align: center
+    color: #9f9f9f
+
+.product_list
+    display: grid
+    grid-template-columns: repeat(3, minmax(180px, 360px))
+    grid-template-rows: repeat(2, minmax(581px, auto))
+    grid-gap: 30px
+    margin-top: 48px
+    margin-bottom: 48px
+
+.product_img_box
+    height: 420px
+    background-color: #F7E4E2
+    overflow: hidden
+
+.product_box_img
+    max-width: 100%
+    min-height: 100%
+    display: block
+    margin: 0 auto
+
+.link
+    text-decoration: none
+
+.text_box
+    padding: 25px 0 20px 18px
+    background-color: #F8F8F8
+
+.product_title
+    font-size: 13px
+    color: #222222
+    text-transform: uppercase
+
+.product_text
+    font-weight: 300
+    font-size: 14px
+    color: #5D5D5D
+    margin-top: 13px
+    margin-bottom: 18px
+
+.product_price
+    font-size: 16px
+    font-weight: bold
+    @include pink
+
+.product_box
+    position: relative
+
+.box_add
+    position: absolute
+    top: 186.5px
+    display: none
+    justify-content: center
+    width: 100%
+
+.product_box:hover
+    .box_add
+        display: flex
+        filter: brightness(0) invert(1)
+        z-index: 2
+
+.add
+    border: 1px solid #ffffff
+    padding: 8px 12px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+    text-decoration: none
+    display: flex
+    align-items: center
+
+.add:hover
+    box-shadow: 0 0 10px #fff
+
+.product_box:hover
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+.product_box:hover
+    .product_img_box::after
+        content: ""
+        position: relative
+        box-shadow: 180px -202px 0px 210px rgba(0, 0, 0, 0.6)
+
+.product_cart
+    margin-right: 8px
+
+.browse_all_product_button
+    background-color: #f16d7f
+    padding: 18px 24px
+    border: 1px solid #f16d7f
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 0.4px
+    color: #ffffff
+    text-decoration: none
+    line-height: 11px
+    margin: 0 auto
+
+.product
+    margin-bottom: 96px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.features
+    background-color: #222224
+
+.product_sort_feature
+    padding: 103px 0 104px 0
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+
+.feature_item
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.product_feature_img
+    margin: 0 auto
+
+.product_feature_text
+    margin: 0 auto
+    max-width: 360px
+    font-weight: 300
+    text-align: center
+    font-size: 14px
+    color: #FBFBFB
+
+.product_feature_hedding
+    font-size: 20px
+    text-align: center
+    margin-top: 32px
+    margin-bottom: 16px
+    font-weight: 400
+    color: #FBFBFB
+
+.product_feature_hedding_2
+    margin-top: 25px
+
+.subscribe
+    display: block
+    position: relative
+    z-index: 1
+    max-width: 100%
+
+.subscribe::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0.25
+    z-index: -1
+    background: url(img/subscribe_back.png)
+    background-repeat: no-repeat
+    background-size: cover
+
+.subscribe_flex
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    align-items: center
+    height: 100%
+
+.comment
+    padding: 97px 0 154px 0
+
+.comment_img
+    display: block
+    margin: 0 auto
+    margin-bottom: 30px
+
+.comment_text
+    max-width: 360px
+    font-size: 20px
+    text-align: center
+    color: #222224
+    .comment_text_cursive
+        font-size: 18px
+        font-style: italic
+
+.subscribe_title
+    font-size: 24px
+    letter-spacing: 0.6px
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 6px
+
+.subscribe_text
+    font-size: 18px
+    text-align: center
+
+.subscribe_form
+    display: flex
+    margin-top: 32px
+    justify-content: center
+
+.email
+    border: none
+    background-color: #e1e1e1
+    border-top-left-radius: 23px
+    border-bottom-left-radius: 23px
+    padding: 0 28px
+    outline: none
+
+.email::placeholder
+    opacity: 0.67
+    font-size: 14px
+    letter-spacing: 0.35px
+    color: rgba(34, 34, 36, 0.67)
+
+.subscribe_button
+    border: none
+    padding: 18px 20px
+    border-top-right-radius: 23px
+    border-bottom-right-radius: 23px
+    font-size: 14px
+    letter-spacing: 0.35px
+    color: #ffffff
+    line-height: 10px
+    margin: unset
+    cursor: pointer
+    font-family: 'Lato', sans-serif
+
+.footer
+    padding: 24px 0
+    background-color: #222224
+
+.footer_flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.copyright
+    color: #FBFBFB
+
+.contacts i
+    color: #ffffff
+    font-size: 32px
+    margin-right: 7px
+
+.contacts i:hover
+    color: #f16d7f
+
+.product
+    .browse_all_product_button:hover
+        display: block
+        border: 1px solid #f16d7f
+        background-color: #ffffff
+        color: #f16d7f
+
+.menu_box
+    position: absolute
+    top: 74px
+    right: 0
+    display: none
+    width: 232px
+    height: 764px
+    flex-direction: column
+    background: #FFFFFF
+    padding: 16px 17px 16px 33px
+    z-index: 1
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    box-sizing: border-box
+
+#cross
+    align-self: flex-end
+    font-size: 18px
+    color: #6F6E6E
+    margin: unset
+
+#cross:hover
+    color: #f16d7f
+
+.menu_title
+    color: #000000
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 9px
+    margin-bottom: 4px
+
+.menu_hedding
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    @include pink
+    margin-bottom: 12px
+    margin-top: 20px
+
+.menu-li
+    list-style-type: none
+    margin-bottom: 10px
+    padding-left: 20%
+    max-width: 200px
+    &:last-of-type
+        margin: unset
+
+.mega-link
+    text-decoration: none
+    color: #6F6E6E
+    display: block
+    &:hover
+        color: #f16d7f
+
+.menu_button i
+    cursor: pointer
+
+.menu_button:hover
+    .menu_box
+        display: flex
+
+.menu_box:hover
+    display: flex
+
+.contacts i:last-child
+    margin: unset
+
+@media screen and ( max-width: 768px )
+    .container
+        padding: 0 16px
+
+    .header
+        padding: 18px 16px
+
+    .banner_brand
+        font-size: 44px
+        line-height: unset
+        margin-bottom: unset
+
+    .text_fashion
+        font-size: 24px
+
+    .banner_block
+        column-gap: 39px
+
+    .categories
+        grid-gap: 20px
+        margin-bottom: 154px
+
+    .product_list
+        margin-top: 72px
+        grid-template-columns: repeat(2, minmax(180px, 360px))
+        grid-template-rows: repeat(3, minmax(581px, auto))
+        grid-gap: 16px
+        margin-bottom: 33px
+
+    .product
+        margin-bottom: 65px
+
+    .product_sort_feature
+        flex-direction: column
+        padding: 0 0 64px 0
+
+    .product_feature_hedding
+        margin-top: 25px
+
+    .product_feature_img
+        margin-top: 48px
+
+    .subscribe_flex
+        flex-direction: column
+
+    .comment
+        padding-top: 64px
+        padding-bottom: 75px
+
+    .subscribe_form
+        margin-top: 27px
+
+    .subscribe
+        padding-bottom: 140px
+
+    .footer
+        padding: 0 16px
+
+@media screen and ( max-width: 375px )
+    .container
+        padding: 0 8px
+
+    .fa-user
+        display: none
+
+    .cart_box
+        display: none
+
+    .header
+        padding: 18px 8px
+        .flex_right i
+            margin: unset
+
+    .banner_block
+        display: block
+        padding: 148px 56px
+
+    .banner_img
+        display: none
+
+    .banner_brand
+        font-size: 38px
+
+    .text_fashion
+        font-size: 20px
+
+    .banner_text
+        padding-right: unset
+
+    .categories
+        display: flex
+        flex-direction: column
+        grid-gap: 32px
+        margin-bottom: 64px
+
+    .categories_item
+        overflow: hidden
+
+    .categories_img_last
+        height: 111px
+        transform: scale(200%, 100%)
+
+    .product_list
+        margin-top: 64px
+        display: flex
+        flex-direction: column
+        margin-bottom: 41px
+
+    .product
+        margin-bottom: 97px
+
+    .product_sort_feature
+        padding-bottom: 81px
+
+    .comment_text
+        font-size: 19px
+
+    .subscribe_text
+        font-size: 14px
+
+    .subscribe
+        padding-bottom: 110px
+
+    .footer
+        padding: 43px 0 9px 0
+
+    .footer_flex
+        flex-direction: column-reverse
+
+    .contacts
+        margin-bottom: 40px

@@ -30,7 +30,7 @@ body {
 .text_featured {
   text-align: center;
   color: #9f9f9f;
-  font-weight: unset;
+  font-size: 14px;
 }
 
 .header {
@@ -535,7 +535,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 45px;
+  line-height: 60px;
   margin-bottom: 20px;
  }
 
@@ -1924,6 +1924,7 @@ input[type='radio'] {
   font-size: 16px;
   font-weight: 300;
   color: #c4c4c4;
+  display: block;
 }
 
 .page_link:hover {
