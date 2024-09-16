@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b7ba52cadb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Brand</title>
+    <title>Product</title>
 </head>
 
 <body>
@@ -92,9 +92,7 @@
                 <img class="cart" src="img/cart.svg" alt="cart">
                 <div class="live_cart">
                     <div class="cart_item">
-                        <a href="single_page.html">
-                            <img src="img/cart_img_1.png" alt="cart_img_1">
-                        </a>
+                        <img src="img/cart_img_1.png" alt="cart_img_1">
                         <div class="cart_item_info">
                             <p class="cart_item_name">rebox zane</p>
                             <img class="cart_stars" src="img/cart_stars.png" alt="cart_stars">
@@ -104,9 +102,7 @@
                     </div>
                     <hr class="cart_item_line">
                     <div class="cart_item">
-                        <a href="single_page.html">
-                            <img src="img/cart_img_2.png" alt="cart_img_2">
-                        </a>
+                        <img src="img/cart_img_2.png" alt="cart_img_2">
                         <div class="cart_item_info">
                             <p class="cart_item_name">rebox zane</p>
                             <img class="cart_stars" src="img/cart_stars.png" alt="cart_stars">
@@ -849,192 +845,347 @@
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <div class="banner_block container">
-            <div class="banner_text">
-                <p class="banner_brand">the brand</p>
-                <p class="banner_brand text_fashion">of luxerious
-                    <span class="span_fashion">fashion</span>
-                </p>
+    <div class="new_arrivals">
+        <div class="container">
+            <div class="new_arrivals_flex">
+                <h3 class="new_arrivals_title">new arrivals</h3>
+                <div class="new_arrivals_textblock">
+                    <span class="new_arrivals_text">home / men / </span>
+                    <span class="new_arrivals_text new_arrivals_text_pink">new arrivals</span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="categories container">
-        <div class="categories_parent">
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_1.png" alt="categories_item_1">
-                    <div class="news-txt">
-                        <p><strong>hot deal</strong></p>
-                        <h3><strong>for man</strong></h3>
+    <div class="product_main container">
+        <aside class="product_aside">
+            <details class="product_aside_details">
+                <summary class="new_arrivals_text new_arrivals_text_pink product_summary">category</summary>
+                <a href="#" class="product_aside_details_link">Accessories</a>
+                <a href="#" class="product_aside_details_link">Bags</a>
+                <a href="#" class="product_aside_details_link">Denim</a>
+                <a href="#" class="product_aside_details_link">Hoodies & Sweatshirts</a>
+                <a href="#" class="product_aside_details_link">Jackets & Coats</a>
+                <a href="#" class="product_aside_details_link">Pants</a>
+                <a href="#" class="product_aside_details_link">Polos</a>
+                <a href="#" class="product_aside_details_link">Shirts</a>
+                <a href="#" class="product_aside_details_link">Shoes</a>
+                <a href="#" class="product_aside_details_link">Sweaters & Knits</a>
+                <a href="#" class="product_aside_details_link">T-Shirts</a>
+                <a href="#" class="product_aside_details_link">Tanks</a>
+            </details>
+            <details class="product_aside_details">
+                <summary class="new_arrivals_text new_arrivals_text_pink product_summary">BRAND</summary>
+                <a href="#" class="product_aside_details_link">Accessories</a>
+                <a href="#" class="product_aside_details_link">Bags</a>
+                <a href="#" class="product_aside_details_link">Denim</a>
+                <a href="#" class="product_aside_details_link">Hoodies & Sweatshirts</a>
+                <a href="#" class="product_aside_details_link">Jackets & Coats</a>
+                <a href="#" class="product_aside_details_link">Pants</a>
+                <a href="#" class="product_aside_details_link">Polos</a>
+                <a href="#" class="product_aside_details_link">Shirts</a>
+                <a href="#" class="product_aside_details_link">Shoes</a>
+                <a href="#" class="product_aside_details_link">Sweaters & Knits</a>
+                <a href="#" class="product_aside_details_link">T-Shirts</a>
+                <a href="#" class="product_aside_details_link">Tanks</a>
+            </details>
+            <details class="product_aside_details">
+                <summary class="new_arrivals_text new_arrivals_text_pink product_summary">dESIGNER</summary>
+                <a href="#" class="product_aside_details_link">Accessories</a>
+                <a href="#" class="product_aside_details_link">Bags</a>
+                <a href="#" class="product_aside_details_link">Denim</a>
+                <a href="#" class="product_aside_details_link">Hoodies & Sweatshirts</a>
+                <a href="#" class="product_aside_details_link">Jackets & Coats</a>
+                <a href="#" class="product_aside_details_link">Pants</a>
+                <a href="#" class="product_aside_details_link">Polos</a>
+                <a href="#" class="product_aside_details_link">Shirts</a>
+                <a href="#" class="product_aside_details_link">Shoes</a>
+                <a href="#" class="product_aside_details_link">Sweaters & Knits</a>
+                <a href="#" class="product_aside_details_link">T-Shirts</a>
+                <a href="#" class="product_aside_details_link">Tanks</a>
+            </details>
+        </aside>
+        <div class="product_search">
+            <form class="product_search_top" oninput="product_range_min.value=(product_range.value)" action="#">
+                <div class="product_search_block">
+                    <h3 class="product_search_title">Trending now</h3>
+                    <div class="trending_now_textbox">
+                        <span class="trending_now_text">Bohemian</span>
+                        <div class="trending_now_line"></div>
+                        <span class="trending_now_text">Floral</span>
+                        <div class="trending_now_line"></div>
+                        <span class="trending_now_text">Lace</span>
                     </div>
-                </a>
-
+                    <div class="trending_now_textbox">
+                        <span class="trending_now_text">Lace</span>
+                        <div class="trending_now_line"></div>
+                        <span class="trending_now_text">Floral</span>
+                        <div class="trending_now_line"></div>
+                        <span class="trending_now_text">Bohemian</span>
+                    </div>
+                </div>
+                <div class="product_search_block">
+                    <h3 class="product_search_title">size</h3>
+                    <div class="checkbox_row">
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            xxs
+                        </label>
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            xs
+                        </label>
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            s
+                        </label>
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            m
+                        </label>
+                    </div>
+                    <div class="checkbox_row">
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            l
+                        </label>
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            xl
+                        </label>
+                        <label class="checkbox_container">
+                            <input type="checkbox" class="checkbox_size">
+                            <span class="checkmark_size"></span>
+                            xxl
+                        </label>
+                    </div>
+                </div>
+                <div class="product_search_block">
+                    <h3 class="product_search_title">Price</h3>
+                    <input type="range" value="52" step="1" min="1" max="1000" class="product_range_slider"
+                        id="product_range">
+                    <p class="trending_now_text">
+                        $
+                        <output name="product_range_min" for="product_range_a" class="product_range_output">52</output>
+                    </p>
+                </div>
+            </form>
+            <div class="product_sort">
+                <div class="product_sort_block">
+                    <p class="trending_now_text">Sort By</p>
+                </div>
+                <div class="product_sort_select_wrapper">
+                    <select class="product_sort_select trending_now_text">
+                        <option>Name</option>
+                        <option>Price</option>
+                        <option>Size</option>
+                        <option>Category</option>
+                        <option>Brand</option>
+                        <option>Designer</option>
+                    </select>
+                </div>
+                <div class="product_sort_block">
+                    <p class="trending_now_text">Show</p>
+                </div>
+                <div class="product_sort_select_wrapper">
+                    <select class="product_sort_select trending_now_text">
+                        <option>09</option>
+                        <option>08</option>
+                        <option>07</option>
+                        <option>06</option>
+                        <option>05</option>
+                        <option>04</option>
+                        <option>03</option>
+                        <option>02</option>
+                        <option>01</option>
+                    </select>
+                </div>
             </div>
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_2.png" alt="categories_item_2">
-                    <div class="news-txt">
-                        <p><strong>luxirous & trandy</strong></p>
-                        <h3><strong>accesories</strong></h3>
+            <div class="product_list">
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_1.png" alt="product_1">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
                     </div>
-                </a>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_2.png" alt="product_2">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_3.png" alt="product_3">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_3.png" alt="product_4">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_8.png" alt="product_5">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_4.png" alt="product_6">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_6.png" alt="product_7">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_5.png" alt="product_8">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <a class="link" href="single_page.html">
+                        <img class="product_box_img" src="img/product_sort_img_6.png" alt="product_9">
+                        <p class="text_box">mango people
+                            t-shirt</p>
+                        <p class="text_box text_box_pink">
+                            $52.00</p>
+                    </a>
+                    <div class="box_add">
+                        <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
+                            Add to Cart</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="categories_parent">
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_3.png" alt="categories_item_3">
-                    <div class="news-txt">
-                        <p><strong>30% offer</strong></p>
-                        <h3><strong>woman</strong></h3>
-                    </div>
-                </a>
-            </div>
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_4.png" alt="categories_item_4">
-                    <div class="news-txt">
-                        <p><strong>new arrivals</strong></p>
-                        <h3><strong>for kids</strong></h3>
-                    </div>
-                </a>
+            <div class="product_search_bottom">
+                <nav class="page_navigation">
+                    <ul class="pagination">
+                        <li class="page_item">
+                            <a class="page_link" href="#">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link page_active" href="#">1</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">2</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">3</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">4</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">5</a>
+                        </li>
+                        <li class="page_item page_dots">
+                            <a class="page_link" href="#">6</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">20</a>
+                        </li>
+                        <li class="page_item">
+                            <a class="page_link" href="#">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="checkout.html" class="live_cart_checkout product_sort_button">View All</a>
             </div>
         </div>
     </div>
-    <div class="product container">
-        <div>
-            <h3 class="title">Featured Items</h3>
-            <p class="text text_featured">Shop for items based on what we
-                featured in this
-                week</p>
-        </div>
-        <div class="product_list">
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_1.png" alt="product_1">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_2.png" alt="product_2">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_3.png" alt="product_3">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_4.png" alt="product_4">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_5.png" alt="product_5">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_6.png" alt="product_6">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_7.png" alt="product_7">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_8.png" alt="product_8">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <a class="browse_all_product_button browse_all_product_text" href="product.html">Browse
-            All
-            Product
-        </a>
-    </div>
-    <div class="feature container">
-        <div class="feature_img"></div>
-        <div class="feature_info">
-            <h3 class="feature_hedding f_1">Free Delivery</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
+    <div class="product_sort_feature container">
+        <div class="feature_item">
+            <img class="product_feature_img" src="img/feature_1.svg" alt="feature_1">
+            <h3 class="feature_hedding product_feature_hedding">Free Delivery</h3>
+            <p class="text feature_text product_feature_text">Worldwide delivery on all. Authorit
                 tively morph
                 next-generation innovation with extensive models.
             </p>
-            <h3 class="feature_hedding f_2">Sales & discounts</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
+        </div>
+        <div class="feature_item">
+            <img class="product_feature_img" src="img/feature_2.svg" alt="feature_2">
+            <h3 class="feature_hedding product_feature_hedding">Sales & discounts</h3>
+            <p class="text feature_text product_feature_text">Worldwide delivery on all. Authorit
                 tively morph
                 next-generation innovation with extensive models.
             </p>
-            <h3 class="feature_hedding f_3">Quality assurance</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
+        </div>
+        <div class="feature_item">
+            <img class="product_feature_img" src="img/feature_3.svg" alt="feature_3">
+            <h3 class="feature_hedding product_feature_hedding">Quality assurance</h3>
+            <p class="text feature_text product_feature_text">Worldwide delivery on all. Authorit
                 tively morph
                 next-generation innovation with extensive models.
             </p>

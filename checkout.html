@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b7ba52cadb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Brand</title>
+    <title>Checkout</title>
 </head>
 
 <body>
@@ -92,9 +92,7 @@
                 <img class="cart" src="img/cart.svg" alt="cart">
                 <div class="live_cart">
                     <div class="cart_item">
-                        <a href="single_page.html">
-                            <img src="img/cart_img_1.png" alt="cart_img_1">
-                        </a>
+                        <img src="img/cart_img_1.png" alt="cart_img_1">
                         <div class="cart_item_info">
                             <p class="cart_item_name">rebox zane</p>
                             <img class="cart_stars" src="img/cart_stars.png" alt="cart_stars">
@@ -104,9 +102,7 @@
                     </div>
                     <hr class="cart_item_line">
                     <div class="cart_item">
-                        <a href="single_page.html">
-                            <img src="img/cart_img_2.png" alt="cart_img_2">
-                        </a>
+                        <img src="img/cart_img_2.png" alt="cart_img_2">
                         <div class="cart_item_info">
                             <p class="cart_item_name">rebox zane</p>
                             <img class="cart_stars" src="img/cart_stars.png" alt="cart_stars">
@@ -849,196 +845,288 @@
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <div class="banner_block container">
-            <div class="banner_text">
-                <p class="banner_brand">the brand</p>
-                <p class="banner_brand text_fashion">of luxerious
-                    <span class="span_fashion">fashion</span>
-                </p>
+    <div class="new_arrivals">
+        <div class="container">
+            <div class="new_arrivals_flex">
+                <h3 class="new_arrivals_title">new arrivals</h3>
+                <div class="new_arrivals_textblock">
+                    <span class="new_arrivals_text">home / men / </span>
+                    <span class="new_arrivals_text new_arrivals_text_pink">new arrivals</span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="categories container">
-        <div class="categories_parent">
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_1.png" alt="categories_item_1">
-                    <div class="news-txt">
-                        <p><strong>hot deal</strong></p>
-                        <h3><strong>for man</strong></h3>
+    <div class="checkout container">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">01. Shipping Adress</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
+                </div>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
+                </div>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
                     </div>
-                </a>
-
-            </div>
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_2.png" alt="categories_item_2">
-                    <div class="news-txt">
-                        <p><strong>luxirous & trandy</strong></p>
-                        <h3><strong>accesories</strong></h3>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
                     </div>
-                </a>
-            </div>
-        </div>
-        <div class="categories_parent">
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_3.png" alt="categories_item_3">
-                    <div class="news-txt">
-                        <p><strong>30% offer</strong></p>
-                        <h3><strong>woman</strong></h3>
+                </div>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">02. Billing information</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
+                </div>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
+                </div>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
                     </div>
-                </a>
-            </div>
-            <div class="categories_item">
-                <a href="single_page.html">
-                    <img src="img/categories_item_4.png" alt="categories_item_4">
-                    <div class="news-txt">
-                        <p><strong>new arrivals</strong></p>
-                        <h3><strong>for kids</strong></h3>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
                     </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="product container">
-        <div>
-            <h3 class="title">Featured Items</h3>
-            <p class="text text_featured">Shop for items based on what we
-                featured in this
-                week</p>
-        </div>
-        <div class="product_list">
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_1.png" alt="product_1">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_2.png" alt="product_2">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">03. Shipping information</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_3.png" alt="product_3">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_4.png" alt="product_4">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
+                    </div>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
+                    </div>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_5.png" alt="product_5">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">04. Shipping method</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_6.png" alt="product_6">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_7.png" alt="product_7">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
+                    </div>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
+                    </div>
                 </div>
-            </div>
-            <div class="product_box">
-                <a class="link" href="single_page.html">
-                    <img class="product_box_img" src="img/product_8.png" alt="product_8">
-                    <p class="text_box">mango people
-                        t-shirt</p>
-                    <p class="text_box text_box_pink">
-                        $52.00</p>
-                </a>
-                <div class="box_add">
-                    <a class="add" href="#"><img class="product_cart" src="img/cart.svg" alt="cart">
-                        Add to Cart</a>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">05. Payment method</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
                 </div>
-            </div>
-        </div>
-        <a class="browse_all_product_button browse_all_product_text" href="product.html">Browse
-            All
-            Product
-        </a>
-    </div>
-    <div class="feature container">
-        <div class="feature_img"></div>
-        <div class="feature_info">
-            <h3 class="feature_hedding f_1">Free Delivery</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
-                tively morph
-                next-generation innovation with extensive models.
-            </p>
-            <h3 class="feature_hedding f_2">Sales & discounts</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
-                tively morph
-                next-generation innovation with extensive models.
-            </p>
-            <h3 class="feature_hedding f_3">Quality assurance</h3>
-            <p class="text feature_text">Worldwide delivery on all. Authorit
-                tively morph
-                next-generation innovation with extensive models.
-            </p>
-        </div>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
+                </div>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
+                    </div>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
+                    </div>
+                </div>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
+        <details class="checkout_dropdown">
+            <summary class="total_price_text">06. Order review</summary>
+            <form class="checkout_check">
+                <h3 class="checkout_title">Check as a guest or register</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="checkbox">
+                    <input class="checkmark" type="radio" checked="checked" name="checkout">
+                    <span class="checkmark_text">checkout as guest</span>
+                </div>
+                <div class="checkbox checkbox_last">
+                    <input class="checkmark" type="radio" name="checkout">
+                    <span class="checkmark_text">register</span>
+                </div>
+                <h3 class="checkout_title">register and save time!</h3>
+                <p class="checkout_text">Register with us for future convenience</p>
+                <div class="register_pros">
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Fast and easy checkout</span>
+                    </div>
+                    <div class="pros">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="checkout_text">Easy access to your order history and status</span>
+                    </div>
+                </div>
+                <button class="checkout_button" type="submit">continue</button>
+            </form>
+            <form class="checkout_register">
+                <h3 class="checkout_title">Already registed?</h3>
+                <p class="checkout_text">Please log in below</p>
+                <span class="checkout_form_title">EMAIL ADDRESS</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="email" required>
+                <br>
+                <span class="checkout_form_title">PASSWORD</span>
+                <span class="required_star">*</span>
+                <br>
+                <input class="checkout_register_input" type="password" required>
+                <p class="checkout_register_required">* Required Fields</p>
+                <button class="checkout_button" type="submit">log in</button>
+                <a href="#" class="forgot_password">Forgot Password ?</a>
+            </form>
+        </details>
+        <hr class="checkout_line">
     </div>
     <div class="subscribe">
         <img src="img/subscribe_back.png" alt="subs_back" style="opacity:0.25">
@@ -1091,8 +1179,7 @@
                         array of
                         processes and cross-unit partnerships.
                     </p>
-                    <p class="text footer_text">Efficiently plagiarize 24/365 action items and focused
-                        infomediaries.
+                    <p class="text footer_text">Efficiently plagiarize 24/365 action items and focused infomediaries.
                         Distinctively seize
                         superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
